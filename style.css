@@ -61,3 +61,20 @@ body{
     z-index: 500;
     pointer-events: auto;
 }
+
+.scrollbtn i{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+    z-index: 500;
+    transition: 0.4s;
+}
