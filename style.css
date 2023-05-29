@@ -78,3 +78,63 @@ body{
     z-index: 500;
     transition: 0.4s;
 }
+
+.navbar.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    color: #0078ff;
+    padding: 1.1rem 8rem;
+    box-shadow: 0px 6px 9px 0px rgb(0 0 0 /6%);
+}
+
+.navbar .logo a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+}
+
+.navbar.sticky .logo a{
+    color: #0078ff;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 35px;
+    position: relative;
+}
+
+.navbar .menu li a{
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.navbar.sticky .menu li a{
+    color: #0078ff;
+}
+
+.navbar .menu li a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    background: white;
+    transition: 0.2s;
+}
+
+.navbar.sticky .menu li a::before{
+    background: #0078ff;
+}
+
+.navbar .menu li a:hover:before{
+    width: 35px;
+}
+
