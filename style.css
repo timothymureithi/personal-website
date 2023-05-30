@@ -342,3 +342,49 @@ body{
 .services .services-content .card:hover .card-content .card-title{
     color: white;
 }
+
+/* portfolio section styling */
+.portfolio-content{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.portfolio-content .card{
+    width: 330px;
+    background: white;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+    margin-bottom: 30px;
+}
+
+.portfolio-content .card .photo{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.portfolio-content .card .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.portfolio-content .card:hover .photo img{
+    transform: scale(1.2);
+}
+
+.portfolio-content .card .info{
+    width: 100%;
+    padding: 15px;
+}
+
+.portfolio-content .card .info h3{
+    margin-bottom: 10px;
+}
+
+.portfolio-content .card .info .category{
+    color: #0078ff;
+}
