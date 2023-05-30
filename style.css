@@ -610,3 +610,158 @@ body{
     color: white;
 }
 
+/* responsive styling start here */
+@media (max-width:1024px){
+    .navbar,
+    .navbar.sticky{
+        padding: 0.5rem 1.5rem;
+    }
+
+    .about .container{
+        padding: 0 1.5rem;
+    }
+
+    .contact .container{
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width:890px){
+    .about .container{
+        padding: 0 1rem;
+    }
+
+    .about-content{
+        display: block;
+        padding: 25px;
+    }
+
+    .about-content .info{
+        width: 100%;
+        display: flex;
+        padding: 0;
+    }
+
+    .about-content .aboutme{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width:768px){
+    .navbar,
+    .navbar.sticky{
+        padding: 0.5rem 2.5rem;
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #0078ff;
+        color: white;
+        text-align: center;
+        padding-top: 50px;
+        transition: 0.5s;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+        margin: 0;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .navbar .menu li a:hover::before{
+        width: 0vh;
+    }
+
+    .navbar .menu li a,
+    .navbar.sticky .menu li a{
+        color: white;
+    }
+
+    .navbar .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar.sticky .menu-btn i{
+        color: black;
+    }
+
+    .navbar .menu-btn i.active:before{
+        content: "\f00d";
+    }
+
+    .navbar.sticky .menu-btn i.active{
+        color: white;
+    }
+
+    .home .home-content h1{
+        text-align: center;
+        padding: 0 20px;
+        font-size: 3.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .home .home-content span{
+        font-size: 40px;
+    }
+
+    .contact .container{
+        padding: 0 15px;
+    }
+
+    .contact .contact-content{
+        display: block;
+    }
+
+    .contact .contact-content .message{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .contact .contact-content .message button{
+        padding: 10px 15px;
+    }
+
+    .contact .contact-content .gettouch{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width:500px){
+    .home .home-content h1{
+        font-size: 2.5rem;
+    }
+
+    .home .home-content span{
+        font-size: 30px;
+    }
+
+    .about-content .info .personal{
+        display: block;
+    }
+
+    .about-content .info .personal .photo{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-content .info .personal .name{
+        width: 100%;
+    }
+}
