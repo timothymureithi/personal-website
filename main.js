@@ -1,3 +1,13 @@
+// typing animation
+var typing = new Typed (".typing",{
+
+    strings : ["Web Developer", "Youtuber", "Web Designer", "Blogger", "Freelancer"],
+    typeSpeed:100,
+    backSpeed :60,
+    loop:true
+
+});
+
 // sticky navbar
 window.onscroll = function(){
 
