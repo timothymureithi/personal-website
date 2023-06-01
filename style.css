@@ -144,7 +144,7 @@ body{
     left: 0;
     top: 0;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(images/intro-bg.jpg) center center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url("https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80") center center/cover no-repeat;
     background-attachment: fixed;
     color: white;
 }
